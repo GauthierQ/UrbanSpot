@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "391753127106",
+    "firebase_url": "https://urbanspot-2c683-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "urbanspot-2c683",
+    "storage_bucket": "urbanspot-2c683.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:391753127106:android:95aaab52f06ec2b6e8d75b",
+        "android_client_info": {
+          "package_name": "fr.mds.urban_spot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "391753127106-4sf8ps577qo945lndf904pq4qoueqf0g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYLpjuHziP5dRffCqKaVwhyGZBG9GiN00"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "391753127106-4sf8ps577qo945lndf904pq4qoueqf0g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
