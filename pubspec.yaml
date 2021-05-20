@@ -36,6 +36,7 @@ dependencies:
     path: packages/authentication_repository
   user_repository:
     path: packages/user_repository
+  firebase_database: ^6.1.2
 
 
 
