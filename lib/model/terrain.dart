@@ -35,7 +35,7 @@ class Terrain {
     required this.latitude,
     required this.longitude,
     required this.nom,
-    required this.ville,
+    //required this.ville,
   });
 
   String adresse;
@@ -47,7 +47,7 @@ class Terrain {
   double latitude;
   double longitude;
   String nom;
-  Ville ville;
+  //Ville ville;
 
   factory Terrain.fromJson(Map<String, dynamic> json) => Terrain(
     adresse: json["adresse"],
@@ -59,7 +59,7 @@ class Terrain {
     latitude: json["latitude"].toDouble(),
     longitude: json["longitude"].toDouble(),
     nom: json["nom"],
-    ville: villeValues.map[json["ville"]],
+   // ville: villeValues.map[json["ville"]],
   );
 
   Map<String, dynamic> toJson() => {
@@ -72,12 +72,12 @@ class Terrain {
     "latitude": latitude,
     "longitude": longitude,
     "nom": nom,
-    "ville": villeValues.reverse[ville],
+    //"ville": villeValues.reverse[ville],
   };
 }
 
 enum Ville { RENNES, VERN_SUR_SEICHE, IUGHVBJ }
-
+/*
 final villeValues = EnumValues({
   "iughvbj": Ville.IUGHVBJ,
   "Rennes": Ville.RENNES,
@@ -96,4 +96,4 @@ class EnumValues<T> {
     }
     return reverseMap;
   }
-}
+}*/

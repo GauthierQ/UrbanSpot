@@ -1,12 +1,14 @@
-import 'package:flutter/material.dart';
+import 'package:authentication_repository/authentication_repository.dart';
+import 'package:bloc/bloc.dart';
+import 'package:flutter/widgets.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:urban_spot/app/app.dart';
 
-import 'authentication_repository.dart';
-import 'user_repository.dart';
-import 'app.dart';
-
-void main() {
-  runApp(App(
-    authenticationRepository: AuthenticationRepository(),
-    userRepository: UserRepository(),
-  ));
+void main() async {
+  Bloc.observer = AppBlocObserver();
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  final authenticationRepository = AuthenticationRepository();
+  await authenticationRepository.user.first;
+  runApp(App(authenticationRepository: authenticationRepository));
 }
